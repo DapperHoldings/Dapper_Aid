@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlockNumbers">
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/app_name"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/buttonblock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonUnblock"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickBlock"
+        android:text="Block" />
+
+    <Button
+        android:id="@+id/buttonUnblock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="onClickUnblock"
+        android:text="UnBlock" />
+
+    <Button
+
+        android:id="@+id/buttonIsBlocked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="isBlocked"
+        android:layout_below="@+id/buttonUnblock"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickIsBlocked"/>
+
+    <Button
+        android:id="@+id/gotoNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Next" />
+
+</RelativeLayout>
